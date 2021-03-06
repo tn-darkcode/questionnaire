@@ -8,7 +8,7 @@
                     <div class="card-header">Create New Question</div>
 
                     <div class="card-body">
-                        <form action="/questionnaires/{{$questionnaire->id}}/questions" method="POST">
+                        <form action="{{$questionnaire->path()}}/questions" method="POST">
                             @csrf
 
                             <div class="mb-3">
